@@ -1,12 +1,12 @@
 let nombre = prompt("Ingresa tu nombre")
 
 
-while (nombre = !isNaN(nombre)) {
+while (!isNaN(nombre) || nombre === ``) {
     alert("Los datos ingresados no son correctos.")
     nombre = prompt ("Ingresa tu nombre")
-    alert("Hola, " + nombre + " Bienvenido a Manga online") 
-    break
 }
+
+alert("Hola, " + nombre + " Bienvenido a Manga online") 
 
 let menuDeMangas = "1 - Attack on titan\n2 - Boku no hero academia\n3 - Inuyasha\n4 - Sakura CardCaptor\n5 - salir"
 let manga1 = 10
